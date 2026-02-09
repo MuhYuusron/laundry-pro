@@ -1,0 +1,22 @@
+/* Import Font Elegan dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap');
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+/* Terapkan Inter untuk body text */
+body {
+  font-family: var(--font-sans);
+}
+
+/* Terapkan Playfair Display untuk semua judul agar terlihat mewah */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Paksa override class Tailwind font-sans */
+.font-sans {
+  font-family: var(--font-sans) !important;
+}
